@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { ExternalLink, Github } from 'lucide-react';
 import { Sora, Outfit, Fira_Code } from 'next/font/google';
 import './globals.css';
 
@@ -63,6 +64,27 @@ export default function RootLayout({
                   </Link>
                 </div>
               </div>
+              <div className="hidden items-center gap-2 sm:flex">
+                <a
+                  href="https://github.com/JarvixGaby/motion-guide"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Motion Guide on GitHub"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-stone-300 bg-white/70 text-stone-600 shadow-sm transition-colors hover:border-stone-900 hover:bg-stone-950 hover:text-white"
+                >
+                  <Github className="h-4 w-4" />
+                </a>
+                <a
+                  href="https://x.com/JarvixGaby"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="JarvixGaby on X"
+                  className="inline-flex h-9 items-center justify-center gap-1.5 rounded-full border border-stone-300 bg-white/70 px-3 font-mono text-[11px] uppercase tracking-widest text-stone-600 shadow-sm transition-colors hover:border-stone-900 hover:bg-stone-950 hover:text-white"
+                >
+                  X
+                  <ExternalLink className="h-3.5 w-3.5" />
+                </a>
+              </div>
             </div>
           </div>
         </nav>
@@ -70,7 +92,27 @@ export default function RootLayout({
         <footer className="mt-32 py-12 border-t border-stone-200">
           <div className="site-shell flex flex-col gap-4 sm:flex-row sm:justify-between sm:items-center">
             <span className="font-display text-sm font-medium text-stone-900">Motion Guide</span>
-            <span className="font-mono text-[10px] uppercase tracking-widest text-stone-400">Skill-first UI motion guidance</span>
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-3">
+              <a
+                href="https://github.com/JarvixGaby/motion-guide"
+                target="_blank"
+                rel="noreferrer"
+                className="font-mono text-[10px] uppercase tracking-widest text-stone-500 transition-colors hover:text-stone-950"
+              >
+                GitHub
+              </a>
+              <a
+                href="https://x.com/JarvixGaby"
+                target="_blank"
+                rel="noreferrer"
+                className="font-mono text-[10px] uppercase tracking-widest text-stone-500 transition-colors hover:text-stone-950"
+              >
+                X
+              </a>
+              <span className="font-mono text-[10px] uppercase tracking-widest text-stone-400">
+                Skill-first UI motion guidance
+              </span>
+            </div>
           </div>
         </footer>
       </body>

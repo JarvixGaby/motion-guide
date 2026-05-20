@@ -1,15 +1,11 @@
 import Link from 'next/link';
-import { ArrowRight, CheckCircle2, ShieldCheck, Sparkles, TerminalSquare } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ExternalLink, Github, ShieldCheck, Sparkles, TerminalSquare } from 'lucide-react';
 
 const installCommands = [
   {
     label: 'skills.sh',
     command: 'npx skills add JarvixGaby/motion-guide',
-  },
-  {
-    label: 'Codex only',
-    command: 'npx skills add JarvixGaby/motion-guide -a codex',
-  },
+  }
 ];
 
 const outcomes = [
@@ -112,6 +108,26 @@ export default function SkillsPage() {
             Browse motion library
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </Link>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <a
+              href="https://github.com/JarvixGaby/motion-guide"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white/80 px-4 py-2.5 font-mono text-[11px] uppercase tracking-widest text-stone-700 shadow-sm transition-colors hover:border-stone-900 hover:bg-stone-950 hover:text-white"
+            >
+              <Github className="h-4 w-4" />
+              GitHub
+            </a>
+            <a
+              href="https://x.com/JarvixGaby"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white/80 px-4 py-2.5 font-mono text-[11px] uppercase tracking-widest text-stone-700 shadow-sm transition-colors hover:border-stone-900 hover:bg-stone-950 hover:text-white"
+            >
+              <ExternalLink className="h-4 w-4" />
+              X
+            </a>
+          </div>
         </div>
       </section>
 

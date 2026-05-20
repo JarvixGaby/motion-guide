@@ -1,25 +1,13 @@
-# Motion Guide Skill
+# motion-guide skills
 
-Motion Guide is an installable AI-agent skill for product UI motion decisions. It helps coding agents decide whether motion should exist, choose the right functional or expressive motion pattern, and implement or review motion with accessibility, reduced-motion, timing, easing, and performance constraints.
+Motion Guide is an installable AI-agent skill for product-safe UI motion decisions. It helps coding agents choose when to animate, when to reduce motion, and when no motion is the better product choice.
 
 ## Install
 
-### `npx skills`
+Install with the open `skills` CLI:
 
 ```bash
 npx skills add JarvixGaby/motion-guide
-```
-
-Install only for Codex:
-
-```bash
-npx skills add JarvixGaby/motion-guide -a codex
-```
-
-List skills in the repository:
-
-```bash
-npx skills add JarvixGaby/motion-guide --list
 ```
 
 ### Codex / OpenAI-Style Skill Surfaces
@@ -33,21 +21,6 @@ ln -s "$PWD/motion-guide" ~/.codex/skills/motion-guide
 
 The optional `agents/openai.yaml` file provides UI metadata for skill lists and chips.
 
-### Other Markdown Skill Runtimes
-
-Keep `SKILL.md` as the entrypoint and preserve the `references/` folder next to it:
-
-```txt
-motion-guide/
-  SKILL.md
-  agents/openai.yaml
-  references/
-    motion-database.md
-    creative-motion-pack.md
-```
-
-For runtimes that use a different skills directory, copy this folder into that location and start a new agent session.
-
 ## When To Use
 
 Use Motion Guide whenever an AI coding agent is designing, adding, changing, suggesting, or reviewing UI motion.
@@ -55,19 +28,19 @@ Use Motion Guide whenever an AI coding agent is designing, adding, changing, sug
 Example prompts:
 
 ```text
-Use $motion-guide to improve this dashboard loading state.
+Use /motion-guide to improve this dashboard loading state.
 ```
 
 ```text
-Use $motion-guide to review this PR for fake progress, missing reduced-motion, and unnecessary animation dependencies.
+Use /motion-guide to review this PR for fake progress, missing reduced-motion, and unnecessary animation dependencies.
 ```
 
 ```text
-Use $motion-guide to choose between skeleton, spinner, and progress bar for this import screen.
+Use /motion-guide to choose between skeleton, spinner, and progress bar for this import screen.
 ```
 
 ```text
-Use $motion-guide to design a creative WebGL hero motion, but keep it product-intent driven and include reduced-motion fallback.
+Use /motion-guide to design a creative WebGL hero motion, but keep it product-intent driven and include reduced-motion fallback.
 ```
 
 ## What It Changes
