@@ -17,7 +17,7 @@ skill 包是这个项目的主体。网页只是辅助浏览和展示的 compani
 - 面向 AI 生成前端代码的动效 review 标准。
 - 一个用于浏览和比较同一套决策体系的网站：
   - Hosted site: <https://motion-guide.pages.dev/>
-  - Skill demo: <https://motion-guide.pages.dev/skills>
+  - Install section: <https://motion-guide.pages.dev/#install-the-skill>
 
 ## Install
 
