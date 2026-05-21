@@ -9,14 +9,14 @@ export default function NotFound() {
         Animation Not Found
       </h1>
       <p className="mt-4 max-w-md text-zinc-400">
-        This animation doesn't exist in our dictionary yet. Head back to explore what we have.
+        This motion pattern is not in Motion Guide yet. Head back to explore the library.
       </p>
       <Link
         href="/"
         className="mt-8 flex items-center gap-2 rounded-lg bg-amber-warm px-6 py-3 font-medium text-zinc-900 transition-all hover:bg-amber-coral"
       >
         <Home className="h-5 w-5" />
-        Back to Dictionary
+        Back to Library
       </Link>
     </div>
   );

@@ -55,7 +55,7 @@ export default function EntryPage({
     <div className="site-shell py-12">
       {/* Back Navigation */}
       <EntryReveal className="mb-8">
-        <Suspense fallback={<span className="text-sm font-medium text-stone-500">Back to Dictionary</span>}>
+        <Suspense fallback={<span className="text-sm font-medium text-stone-500">Back to Library</span>}>
           <EntryBackLink />
         </Suspense>
       </EntryReveal>

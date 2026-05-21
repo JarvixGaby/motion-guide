@@ -9,7 +9,7 @@ export function EntryBackLink() {
   const from = searchParams.get('from');
   const isFromGuides = from?.startsWith('/guides');
   const href = isFromGuides && from ? from : '/';
-  const label = isFromGuides ? 'Back to Guides' : 'Back to Dictionary';
+  const label = isFromGuides ? 'Back to Guides' : 'Back to Library';
 
   return (
     <Link
