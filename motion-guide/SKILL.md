@@ -31,7 +31,7 @@ Common triggers:
 - brand-forward landing pages, product showcases, storytelling, 2D/3D/WebGL/shader/particle hero motion
 - code review of an existing UI diff that adds, removes, or changes motion
 
-Use the website/app data as source of truth when content changes: `app/data/entries.ts` and `app/data/guides.ts`. Keep this skill plus `references/motion-database.md` and `references/creative-motion-pack.md` synchronized.
+When website content changes, keep this skill plus `references/motion-database.md` and `references/creative-motion-pack.md` synchronized with the public Motion Guide decision set.
 
 ## When Not to Use
 

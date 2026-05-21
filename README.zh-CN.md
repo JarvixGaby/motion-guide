@@ -6,7 +6,7 @@ Motion Guide 是一个可安装的 AI agent skill，用来帮助 coding agent �
 
 它不是组件库，也不是动效素材库。它的目标是把「加一点动画」这类模糊需求，转化为清晰的产品判断：什么时候该用动效，什么时候应该减弱动效，什么时候不应该动。它还会约束实现细节，包括时长、缓动、可访问性、减少动态效果、性能、依赖风险和 review 标准。
 
-skill 包是这个项目的主体。网页只是辅助浏览和展示的 companion demo。
+skill 包是这个项目的主体。托管网页只是辅助浏览和展示的 companion demo，并且不再作为这个公开 skill repo 的源码发布。
 
 ## What The Skill Contains
 
@@ -24,7 +24,7 @@ skill 包是这个项目的主体。网页只是辅助浏览和展示的 compani
 Install with the open `skills` CLI:
 
 ```bash
-npx skills add JarvixGaby/motion-guide
+npx skills add JarvixGaby/motion-guide-skill
 ```
 
 ### With Codex Skills
@@ -72,29 +72,7 @@ skill 可能会给出三类判断：
 - `motion-guide/SKILL.md` - skill 入口。
 - `motion-guide/agents/openai.yaml` - OpenAI/Codex 风格 skill surface 的 UI 元数据。
 - `motion-guide/references/` - 完整动效模式参考。
-- `app/` - 可选的 Next.js demo site。
 - `docs/` - 公开产品笔记和内容模型。
-
-## Local Demo Development
-
-demo app 位于 `app/`。
-
-```bash
-cd app
-pnpm install
-pnpm dev
-```
-
-常用检查：
-
-```bash
-cd app
-pnpm typecheck
-pnpm validate:data
-pnpm build
-```
-
-需要 Node.js 22+ 和 pnpm 10。
 
 ## License
 

@@ -7,7 +7,7 @@ Motion Guide is an installable AI-agent skill for product-safe UI motion decisio
 Install with the open `skills` CLI:
 
 ```bash
-npx skills add JarvixGaby/motion-guide
+npx skills add JarvixGaby/motion-guide-skill
 ```
 
 ### Codex / OpenAI-Style Skill Surfaces
@@ -81,12 +81,7 @@ For normal coding tasks, the agent should keep the user-facing summary concise a
 
 ## Source of Truth
 
-The website data remains the source of truth for pattern content:
-
-- `app/data/entries.ts`
-- `app/data/guides.ts`
-
-When entries or guides change, update:
+The public Motion Guide decision set is mirrored in this package. When the hosted website content changes, update these files together:
 
 - `motion-guide/SKILL.md`
 - `motion-guide/references/motion-database.md`
@@ -94,12 +89,6 @@ When entries or guides change, update:
 
 ## Verification
 
-Before publishing package changes:
-
-```bash
-cd app
-pnpm validate:data
-pnpm typecheck
-```
+Before publishing package changes, inspect the skill package and README references for stale install commands or missing linked files.
 
 Also verify `SKILL.md` frontmatter remains valid YAML, its `description` stays below 1024 characters, and links to `references/` still resolve.

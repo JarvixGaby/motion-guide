@@ -2,7 +2,7 @@
 
 Reference for Motion Guide's 114 UI animation patterns, generated from the current website glossary data and organized by category for agent use.
 
-Source of truth: `app/data/entries.ts` and `app/data/guides.ts`. When website data changes, regenerate or update this reference together with `motion-guide/SKILL.md`.
+Source of truth: the public Motion Guide decision set. When website content changes, regenerate or update this reference together with `motion-guide/SKILL.md`.
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ Source of truth: `app/data/entries.ts` and `app/data/guides.ts`. When website da
 1. Start with the product situation, not the visual effect.
 2. Compare alternatives before selecting a pattern.
 3. Use `When not to use`, `Risks`, and `Decision note` to decide whether to reduce or reject motion.
-4. Use the implementation prompts/snippets in `app/data/entries.ts` when code-level detail is required; this reference stays compact for agent selection.
+4. Use the implementation prompts/snippets in the public Motion Guide decision set when code-level detail is required; this reference stays compact for agent selection.
 
 ## Evaluation-Backed Decision Rules
 

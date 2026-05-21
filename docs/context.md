@@ -15,8 +15,7 @@ The interface follows a quiet, index-like motion reference desk: structured, vis
 
 ## Current App Shape
 
-- `app/` contains the Next.js application.
-- `app/data/entries.ts` and `app/data/guides.ts` contain the motion glossary content.
-- `app/components/demos/` contains individual motion demo components.
-- `motion-guide/SKILL.md` contains the companion motion-guide skill and must stay aligned with major glossary additions.
+- `motion-guide/` contains the public installable skill package.
+- The hosted website is maintained/deployed separately from this public skill repository.
+- `motion-guide/SKILL.md` contains the motion-guide skill and must stay aligned with major glossary additions.
 - `motion-guide/references/creative-motion-pack.md` and `docs/creative-motion-pack.md` document additive Creative Motion Mode for 2D/3D/WebGL motion patterns.

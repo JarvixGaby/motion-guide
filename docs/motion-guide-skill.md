@@ -7,13 +7,13 @@
 ### `npx skills`
 
 ```bash
-npx skills add JarvixGaby/motion-guide
+npx skills add JarvixGaby/motion-guide-skill
 ```
 
 Install only for Codex:
 
 ```bash
-npx skills add JarvixGaby/motion-guide -a codex
+npx skills add JarvixGaby/motion-guide-skill -a codex
 ```
 
 ### Codex
