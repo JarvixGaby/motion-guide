@@ -17,7 +17,7 @@ The skill package is the primary product. The website is a companion browser and
 - Implementation review criteria for AI-generated frontend diffs.
 - A companion website for browsing and comparing the same decision space:
   - Hosted site: <https://motion-guide.pages.dev/>
-  - Skill demo: <https://motion-guide.pages.dev/skills>
+  - Install section: <https://motion-guide.pages.dev/#install-the-skill>
 
 Motion Guide is not a component library and not a decorative effects gallery. It is a decision layer for product motion.
 

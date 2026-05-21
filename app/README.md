@@ -38,7 +38,7 @@ pnpm validate:data
 - Fuzzy search with category, page type, and use case filters.
 - Entry detail pages with live demos, decision guidance, usage notes, prompt templates, code snippets, and related effects.
 - Guides page for comparisons, motion recipes, and anti-patterns.
-- Skills page for installation guidance and skill-output demo cases.
+- Library install section with the skill install command.
 - Responsive light editorial interface.
 
 ## Data Integrity

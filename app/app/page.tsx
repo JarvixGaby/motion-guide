@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { motion, useReducedMotion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, TerminalSquare } from 'lucide-react';
 import { SearchBar } from '@/components/SearchBar';
 import { EntryCard } from '@/components/EntryCard';
 import { PageType, UseCase, Category } from '@/data/taxonomies';
@@ -30,6 +30,8 @@ const itemVariants = {
     },
   },
 };
+
+const installCommand = 'npx skills add JarvixGaby/motion-guide';
 
 export default function HomePage() {
   const reduceMotion = useReducedMotion();
@@ -77,13 +79,18 @@ export default function HomePage() {
               <span className="border-t border-stone-300 pt-3">Creative</span>
               <span className="border-t border-stone-300 pt-3">Audit</span>
             </div>
-            <Link
-              href="/skills"
-              className="group mt-8 inline-flex items-center gap-3 rounded-full border border-stone-300 bg-white/80 px-5 py-3 font-mono text-[11px] uppercase tracking-widest text-stone-700 shadow-sm transition-colors hover:border-stone-900 hover:bg-stone-950 hover:text-white"
+            <div
+              id="install-the-skill"
+              className="mt-8 overflow-hidden rounded-[8px] border border-stone-200 bg-white p-4 shadow-sm"
             >
-              Install the skill
-              <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-            </Link>
+              <div className="mb-2 flex items-center gap-2 font-mono text-[10px] uppercase tracking-widest text-stone-500">
+                <TerminalSquare className="h-3.5 w-3.5" />
+                install the skill
+              </div>
+              <code className="block overflow-x-auto whitespace-nowrap rounded bg-stone-950 px-3 py-2 font-mono text-xs text-stone-100">
+                {installCommand}
+              </code>
+            </div>
           </div>
         </div>
         <div className="mt-14">
