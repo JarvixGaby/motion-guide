@@ -1,12 +1,6 @@
 ---
 name: motion-guide
 description: "Use when designing, adding, changing, suggesting, or reviewing UI motion. Motion Guide is a default-trigger motion decision advisor for AI coding agents: it decides whether motion should exist, selects an appropriate functional or expressive pattern, and constrains implementation with timing, easing, accessibility, reduced-motion, and performance safeguards."
-version: 1.0.0
-author: Motion Guide
-license: MIT
-metadata:
-  tags: [ui-motion, animation, frontend, design-systems, accessibility]
-  related_skills: []
 ---
 
 # Motion Guide Advisor

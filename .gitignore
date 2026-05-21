@@ -48,3 +48,6 @@ docs/prd/source/unpacked_docx/
 
 # typescript
 *.tsbuildinfo
+
+# scripts not for distribution
+start.sh
