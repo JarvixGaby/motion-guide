@@ -6,7 +6,7 @@ Motion Guide 是一个可安装的 AI agent skill，用来帮助 coding agent �
 
 它不是组件库，也不是动效素材库。它的目标是把「加一点动画」这类模糊需求，转化为清晰的产品判断：什么时候该用动效，什么时候应该减弱动效，什么时候不应该动。它还会约束实现细节，包括时长、缓动、可访问性、减少动态效果、性能、依赖风险和 review 标准。
 
-skill 包是这个项目的主体。托管网页只是辅助浏览和展示的 companion demo，并且不再作为这个公开 skill repo 的源码发布。
+这个公开仓库只发布可安装的 Motion Guide skill package。托管网页只是辅助浏览和展示的 companion demo，并且不再作为这个公开 skill repo 的源码发布。
 
 ## What The Skill Contains
 
@@ -18,6 +18,8 @@ skill 包是这个项目的主体。托管网页只是辅助浏览和展示的 c
 - 一个用于浏览和比较同一套决策体系的网站：
   - Hosted site: <https://motion-guide.pages.dev/>
   - Install section: <https://motion-guide.pages.dev/#install-the-skill>
+
+托管网站/app 源码与项目存档在其他地方维护，不属于这个公开仓库。
 
 ## Install
 
@@ -72,7 +74,6 @@ skill 可能会给出三类判断：
 - `motion-guide/SKILL.md` - skill 入口。
 - `motion-guide/agents/openai.yaml` - OpenAI/Codex 风格 skill surface 的 UI 元数据。
 - `motion-guide/references/` - 完整动效模式参考。
-- `docs/` - 公开产品笔记和内容模型。
 
 ## License
 

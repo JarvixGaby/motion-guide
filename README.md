@@ -6,7 +6,7 @@ Motion Guide is an installable AI-agent skill for product-safe UI motion decisio
 
 It helps coding agents choose when to animate, when to reduce motion, and when no motion is the better product choice. The skill turns vague animation requests into named patterns, alternatives, implementation constraints, accessibility checks, reduced-motion behavior, performance guardrails, and review criteria.
 
-The skill package is the primary product. The hosted website is a companion browser and demo for humans, maintained/deployed separately from this public skill repository.
+This public repository publishes only the installable Motion Guide skill package. The hosted website is a companion browser and demo for humans, maintained/deployed separately from this public skill repository.
 
 ## What The Skill Contains
 
@@ -18,6 +18,8 @@ The skill package is the primary product. The hosted website is a companion brow
 - A companion website for browsing and comparing the same decision space:
   - Hosted site: <https://motion-guide.pages.dev/>
   - Install section: <https://motion-guide.pages.dev/#install-the-skill>
+
+The hosted website/app source and project archive are maintained separately and are not part of this public repository.
 
 Motion Guide is not a component library and not a decorative effects gallery. It is a decision layer for product motion.
 
@@ -74,7 +76,6 @@ The skill may recommend:
 - `motion-guide/SKILL.md` - skill entrypoint.
 - `motion-guide/agents/openai.yaml` - UI metadata for OpenAI/Codex-style skill surfaces.
 - `motion-guide/references/` - full motion pattern references.
-- `docs/` - public product notes and content model.
 
 ## License
 
