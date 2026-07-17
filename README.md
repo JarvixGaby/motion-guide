@@ -8,6 +8,26 @@ It helps coding agents choose when to animate, when to reduce motion, and when n
 
 This public repository publishes only the installable Motion Guide skill package. The hosted website is a companion browser and demo for humans, maintained/deployed separately from this public skill repository.
 
+## What is Motion Guide?
+
+**Motion Guide is an installable AI-agent skill for making product-safe UI motion decisions.** It helps coding agents turn vague animation requests into a clear recommendation: use motion, reduce motion, or use no motion. The recommendation includes named patterns, alternatives, implementation constraints, accessibility checks, reduced-motion behavior, performance guardrails, and review criteria.
+
+| Question | Answer |
+| --- | --- |
+| What problem does it solve? | It helps agents make motion a product decision instead of adding animation as decoration. |
+| Who is it for? | Developers and coding agents that design, add, change, suggest, or review UI motion. |
+| What does the package include? | 114 practical UI motion patterns, a creative motion pack, decision rules, accessibility and performance constraints, and review criteria. |
+| Which recommendations can it make? | `use motion`, `reduce motion`, or `no motion`, depending on product intent, clarity, accessibility, and risk. |
+| Which motion contexts are covered? | Practical UI motion plus expressive 2D, 3D, WebGL, shader, particle, data, and system-visualization moments. |
+| What is it not? | It is not a component library or a decorative-effects gallery. |
+
+### Key facts
+
+- Motion Guide can recommend no motion when animation would add delay, distraction, misleading progress, accessibility risk, or product confusion.
+- When motion is appropriate, recommendations account for reduced-motion behavior, performance, dependencies, and implementation review.
+- This repository publishes the installable skill package. The companion website is separately maintained and is not the public repository's application source.
+- Install with `npx skills add JarvixGaby/motion-guide-skill`, or link the `motion-guide/` package into a Codex skills directory.
+
 ## What The Skill Contains
 
 - 114 practical UI motion patterns.
@@ -76,6 +96,28 @@ The skill may recommend:
 - `motion-guide/SKILL.md` - skill entrypoint.
 - `motion-guide/agents/openai.yaml` - UI metadata for OpenAI/Codex-style skill surfaces.
 - `motion-guide/references/` - full motion pattern references.
+
+## FAQ
+
+### Is Motion Guide a UI component library?
+
+No. It is a decision layer for product motion. It helps an agent select an appropriate motion pattern or decide that reduced motion or no motion is the better choice.
+
+### When should an agent use Motion Guide?
+
+Use it when designing, adding, changing, suggesting, or reviewing UI motion, including loading states, onboarding, data visualization, and product-focused creative motion.
+
+### Does Motion Guide support accessibility and reduced motion?
+
+Yes. Its decision and implementation guidance includes accessibility checks and reduced-motion behavior alongside performance and dependency constraints.
+
+### Can it recommend not animating something?
+
+Yes. It can recommend no motion when animation would create delay, distraction, false progress, accessibility risk, or user confusion.
+
+### Is the hosted Motion Guide website part of this repository?
+
+No. This public repository contains the installable skill package. The hosted companion website and its application source are maintained separately.
 
 ## License
 
